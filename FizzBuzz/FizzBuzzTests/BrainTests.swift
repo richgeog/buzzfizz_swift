@@ -1,15 +1,14 @@
 //
-//  FizzBuzzTests.swift
-//  FizzBuzzTests
+//  BrainTests.swift
+//  FizzBuzz
 //
 //  Created by Richard Geoghegan on 19/02/2016.
 //  Copyright © 2016 Richard Geoghegan. All rights reserved.
 //
 
 import XCTest
-@testable import FizzBuzz
 
-class FizzBuzzTests: XCTestCase {
+class BrainTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
