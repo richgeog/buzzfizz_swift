@@ -27,7 +27,11 @@ class Brain: NSObject {
     }
     
     func check(number: Int) -> String {
-        return "Fizz"
+        if isDivisibleByThree(number) {
+            return "Fizz"
+        } else {
+            return "Buzz"
+        }
     }
-
 }
+
