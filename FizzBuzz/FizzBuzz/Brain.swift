@@ -27,7 +27,11 @@ class Brain: NSObject {
     }
     
     func isDivisibleByThreeAndFive(number: Int) -> Bool {
-        return true
+        if number % 15 == 0 {
+            return true
+        } else {
+            return false
+        }
     }
-    
+
 }
