@@ -21,5 +21,9 @@ class GameTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+    
+    func testGameStartAtZero() {
+        XCTAssertTrue(game.score == 0)
+    }
 
 }
