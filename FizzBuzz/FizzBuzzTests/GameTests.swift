@@ -15,7 +15,6 @@ class GameTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-
     }
     
     override func tearDown() {
@@ -27,8 +26,20 @@ class GameTests: XCTestCase {
     }
     
     func testOnPlayScoreIncremented() {
-        game.play()
+        game.play("1")
         XCTAssertTrue(game.score == 1)
+    }
+    
+    func testIfMoveIsRight() {
+        game.score = 2
+        let result = game.play("Fizz")
+        XCTAssertEqual(result, true)
+    }
+    
+    func testIfMoveIsIncorrect() {
+        game.score = 1
+        let result = game.play("Fizz")
+        XCTAssertEqual(result, false)
     }
 
 }
