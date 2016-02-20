@@ -26,4 +26,8 @@ class Brain: NSObject {
         }
     }
     
+    func isDivisibleByThreeAndFive(number: Int) -> Bool {
+        return true
+    }
+    
 }
