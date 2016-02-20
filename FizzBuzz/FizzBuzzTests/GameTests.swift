@@ -25,5 +25,10 @@ class GameTests: XCTestCase {
     func testGameStartAtZero() {
         XCTAssertTrue(game.score == 0)
     }
+    
+    func testOnPlayScoreIncremented() {
+        game.play()
+        XCTAssertTrue(game.score == 1)
+    }
 
 }

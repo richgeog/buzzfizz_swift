@@ -17,4 +17,8 @@ class Game: NSObject {
         super.init()
     }
     
+    func play() {
+        score++
+    }
+    
 }
