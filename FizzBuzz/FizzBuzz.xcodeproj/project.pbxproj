@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		334E42381C7FA6AD0039CC62 /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E42371C7FA6AD0039CC62 /* ViewControllerUnitTests.swift */; };
 		33981EDF1C77DF94006B7D50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33981EDE1C77DF94006B7D50 /* AppDelegate.swift */; };
 		33981EE11C77DF94006B7D50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33981EE01C77DF94006B7D50 /* ViewController.swift */; };
 		33981EE41C77DF94006B7D50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33981EE21C77DF94006B7D50 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		334E42371C7FA6AD0039CC62 /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
 		33981EDB1C77DF94006B7D50 /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33981EDE1C77DF94006B7D50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33981EE01C77DF94006B7D50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				33981F0E1C77E0E0006B7D50 /* BrainTests.swift */,
 				33981EF51C77DF94006B7D50 /* Info.plist */,
 				33981F181C791000006B7D50 /* GameTests.swift */,
+				334E42371C7FA6AD0039CC62 /* ViewControllerUnitTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			files = (
 				33981F0F1C77E0E0006B7D50 /* BrainTests.swift in Sources */,
 				33981F191C791000006B7D50 /* GameTests.swift in Sources */,
+				334E42381C7FA6AD0039CC62 /* ViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
