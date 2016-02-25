@@ -1,22 +1,19 @@
-
 //
-//  ViewController.swift
+//  ViewContoller.swift
 //  FizzBuzz
 //
-//  Created by Richard Geoghegan on 19/02/2016.
+//  Created by Richard Geoghegan on 25/02/2016.
 //  Copyright © 2016 Richard Geoghegan. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     
-    var game : Game?
     var gameScore: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        game = Game()
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,12 +21,6 @@ class ViewController: UIViewController {
     }
     
     func play(move: String) {
-        guard let unwrappedGame = game else {
-            print("Game is nil!")
-            return
-        }
-        let response = unwrappedGame.play(move)
-        gameScore = response.score
+        
     }
-    
 }
