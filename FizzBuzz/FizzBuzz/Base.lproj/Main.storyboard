@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -32,11 +33,54 @@
                                 <color key="textColor" red="0.17254901959999999" green="0.76862745099999996" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tgq-vG-nIf">
-                                <rect key="frame" x="180" y="236" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgq-vG-nIf">
+                                <rect key="frame" x="60" y="60" width="480" height="480"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5n3-S9-mWm">
+                                        <rect key="frame" x="0.0" y="0.0" width="230.5" height="230.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OK2-6R-d0C">
+                                        <rect key="frame" x="0.0" y="249" width="230.5" height="230.5"/>
+                                        <state key="normal" image="lightning" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBO-34-KG9">
+                                        <rect key="frame" x="249" y="249" width="230.5" height="230.5"/>
+                                        <state key="normal" image="space" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzi-AV-LPK">
+                                        <rect key="frame" x="249" y="0.0" width="230.5" height="230.5"/>
+                                        <state key="normal" image="champagne" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.45098039220000002" green="0.96862745100000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="OK2-6R-d0C" firstAttribute="width" secondItem="5n3-S9-mWm" secondAttribute="width" id="2hq-5t-1Nx"/>
+                                    <constraint firstItem="5n3-S9-mWm" firstAttribute="height" secondItem="Tgq-vG-nIf" secondAttribute="height" multiplier="0.48" id="Atm-2q-Y7z"/>
+                                    <constraint firstAttribute="bottom" secondItem="OK2-6R-d0C" secondAttribute="bottom" constant="0.5" id="InL-WI-bt2"/>
+                                    <constraint firstItem="OK2-6R-d0C" firstAttribute="leading" secondItem="Tgq-vG-nIf" secondAttribute="leading" id="JRQ-iW-UGs"/>
+                                    <constraint firstItem="5n3-S9-mWm" firstAttribute="width" secondItem="Tgq-vG-nIf" secondAttribute="width" multiplier="0.48" id="Jvv-nf-F9L"/>
+                                    <constraint firstAttribute="bottom" secondItem="dBO-34-KG9" secondAttribute="bottom" id="OSV-K1-kN0"/>
+                                    <constraint firstItem="OK2-6R-d0C" firstAttribute="height" secondItem="5n3-S9-mWm" secondAttribute="height" id="OjE-NS-5cl"/>
                                     <constraint firstAttribute="width" secondItem="Tgq-vG-nIf" secondAttribute="height" multiplier="1:1" id="Xgu-px-ofs"/>
+                                    <constraint firstItem="pzi-AV-LPK" firstAttribute="top" secondItem="Tgq-vG-nIf" secondAttribute="top" id="a7K-pY-Rg3"/>
+                                    <constraint firstAttribute="trailing" secondItem="pzi-AV-LPK" secondAttribute="trailing" constant="0.5" id="aXr-gE-Wdl"/>
+                                    <constraint firstAttribute="trailing" secondItem="dBO-34-KG9" secondAttribute="trailing" id="dXJ-9R-t1x"/>
+                                    <constraint firstItem="pzi-AV-LPK" firstAttribute="height" secondItem="5n3-S9-mWm" secondAttribute="height" id="e0f-5c-AAs"/>
+                                    <constraint firstItem="dBO-34-KG9" firstAttribute="width" secondItem="5n3-S9-mWm" secondAttribute="width" id="hWJ-Lv-ram"/>
+                                    <constraint firstItem="dBO-34-KG9" firstAttribute="height" secondItem="5n3-S9-mWm" secondAttribute="height" id="n0Q-5H-b6T"/>
+                                    <constraint firstItem="pzi-AV-LPK" firstAttribute="width" secondItem="5n3-S9-mWm" secondAttribute="width" id="qNb-bn-xsP"/>
+                                    <constraint firstItem="5n3-S9-mWm" firstAttribute="leading" secondItem="Tgq-vG-nIf" secondAttribute="leading" id="tTq-yd-pzR"/>
+                                    <constraint firstItem="5n3-S9-mWm" firstAttribute="top" secondItem="Tgq-vG-nIf" secondAttribute="top" id="xIV-uv-SSR"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -57,4 +101,10 @@
             <point key="canvasLocation" x="305" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_border" width="400" height="400"/>
+        <image name="champagne" width="80" height="82"/>
+        <image name="lightning" width="47" height="80"/>
+        <image name="space" width="75" height="80"/>
+    </resources>
 </document>
