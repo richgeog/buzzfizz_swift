@@ -502,6 +502,7 @@
 				33981F051C77DF94006B7D50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33981F061C77DF94006B7D50 /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +511,7 @@
 				33981F081C77DF94006B7D50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33981F091C77DF94006B7D50 /* Build configuration list for PBXNativeTarget "FizzBuzzUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +520,7 @@
 				33981F0B1C77DF94006B7D50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
