@@ -33,12 +33,10 @@ Fizzbuzz
 ### Images
 ---
 
-![iphone5s](./screenshots/5sScreenshot.png =100x20)
-![ipad2](./screenshots/ipad2Screenshot.png)
+![iphone5s](screenshots/5sScreenshot.png) ![ipad2](screenshots/ipad2Screenshot.png)
 
 ### Additional Future Features
 ---
-
 * Setup Play Again button to reset game
 * Add a high score feature
 * Set a limit to what the user plays up to
