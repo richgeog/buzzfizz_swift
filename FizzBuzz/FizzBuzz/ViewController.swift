@@ -49,7 +49,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonTapped(sender: UIButton) {
-        play(Move.Number)
+        if sender == numberButton {
+          play(Move.Number)
+        } else {
+            play(Move.Fizz)
+        }
     }
   
 }

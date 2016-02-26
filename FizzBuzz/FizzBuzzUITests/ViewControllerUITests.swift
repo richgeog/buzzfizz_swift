@@ -38,6 +38,18 @@ class ViewControllerUITests: XCTestCase {
         let newScore = numberButton.label
         XCTAssertEqual(newScore, "2")
     }
+    
+    func testTapFizzButtonIncrementsScoreTo3() {
+        let app = XCUIApplication()
+        let numberButton = app.buttons["numberButton"]
+        let fizzButton = app.buttons["fizzButton"]
+        
+        numberButton.tap()
+        numberButton.tap()
+        fizzButton.tap()
+        let newScore = numberButton.label
+        XCTAssertEqual(newScore, "3")
+    }
 
 }
 
