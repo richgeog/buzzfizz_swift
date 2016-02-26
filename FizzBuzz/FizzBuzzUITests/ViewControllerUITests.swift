@@ -7,7 +7,6 @@
 //
 
 import XCTest
-//@testable import FizzBuzz
 
 class ViewControllerUITests: XCTestCase {
     
@@ -22,9 +21,22 @@ class ViewControllerUITests: XCTestCase {
     }
 
     func testTapNumberButtonIncrementsScore() {
-        XCUIApplication().buttons["0"].tap()
-        let newScore = XCUIApplication().buttons["1"].label
+        let app = XCUIApplication()
+        let numberButton = app.buttons["numberButton"]
+        
+        numberButton.tap()
+        let newScore = numberButton.label
         XCTAssertEqual(newScore, "1")
+    }
+    
+    func testTapNumberButtonTwiceScoreIncrements() {
+        let app = XCUIApplication()
+        let numberButton = app.buttons["numberButton"]
+        
+        numberButton.tap()
+        numberButton.tap()
+        let newScore = numberButton.label
+        XCTAssertEqual(newScore, "2")
     }
 
 }
