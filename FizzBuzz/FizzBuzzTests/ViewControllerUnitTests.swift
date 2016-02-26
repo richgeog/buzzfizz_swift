@@ -65,6 +65,4 @@ class ViewControllerUnitTests: XCTestCase {
         let newScore = viewController.gameScore
         XCTAssertNotEqual(newScore, 3)
     }
-    
-    
 }

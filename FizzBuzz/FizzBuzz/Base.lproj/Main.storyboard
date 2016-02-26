@@ -24,13 +24,13 @@
                                 <rect key="frame" x="457" y="550" width="123" height="30"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="Play Again">
-                                    <color key="titleColor" red="0.17254901960784313" green="0.76862745098039209" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTp-y1-NwU">
                                 <rect key="frame" x="538" y="28" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                <color key="textColor" red="0.17254901959999999" green="0.76862745099999996" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgq-vG-nIf">

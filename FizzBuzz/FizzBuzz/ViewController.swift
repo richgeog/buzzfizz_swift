@@ -11,6 +11,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet weak var numberButton: UIButton!
+    
+    @IBOutlet weak var fizzButton: UIButton!
+    
+    @IBOutlet weak var buzzButton: UIButton!
+    
+    @IBOutlet weak var fizzbuzzButton: UIButton!
+    
     var game : Game?
     var gameScore: Int? {
         didSet {
@@ -21,14 +30,6 @@ class ViewController: UIViewController {
             numberButton.setTitle("\(unwrappedScore)", forState: .Normal)
         }
     }
-    
-    @IBOutlet weak var numberButton: UIButton!
-    
-    @IBOutlet weak var fizzButton: UIButton!
-    
-    @IBOutlet weak var buzzButton: UIButton!
-    
-    @IBOutlet weak var fizzbuzzButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
