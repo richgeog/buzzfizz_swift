@@ -59,9 +59,13 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBO-34-KG9">
                                         <rect key="frame" x="249" y="249" width="230.5" height="230.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzbuzzButton"/>
                                         <state key="normal" image="space" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKF-Ba-rcO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzi-AV-LPK">
                                         <rect key="frame" x="249" y="0.0" width="230.5" height="230.5"/>
@@ -110,6 +114,7 @@
                     <connections>
                         <outlet property="buzzButton" destination="OK2-6R-d0C" id="Uwn-IK-YSI"/>
                         <outlet property="fizzButton" destination="pzi-AV-LPK" id="Gxt-xx-gsa"/>
+                        <outlet property="fizzbuzzButton" destination="dBO-34-KG9" id="ydH-O1-bwg"/>
                         <outlet property="numberButton" destination="5n3-S9-mWm" id="V51-lf-CR1"/>
                     </connections>
                 </viewController>
